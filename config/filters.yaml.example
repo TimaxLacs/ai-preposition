@@ -1,0 +1,191 @@
+# Конфигурация фильтров для AI анализа постов
+# Скопируйте этот файл в filters.yaml и настройте под свои нужды
+
+filters:
+  # Фильтр для технологических новостей
+  - id: tech_news
+    name: "Технологические новости"
+    description: "Фильтрует посты о технологиях, программировании, AI"
+    enabled: true
+    
+    # Промпт для AI - используйте {text} как placeholder для текста поста
+    prompt: |
+      Проанализируй следующий пост и определи:
+      1. Относится ли он к технологиям, программированию или AI?
+      2. Если да, к какой конкретной категории?
+      3. Насколько ты уверен в своем ответе (0.0-1.0)?
+      
+      Пост: {text}
+      
+      Возможные категории:
+      - AI/ML: Искусственный интеллект, машинное обучение, нейронные сети
+      - Web Development: Веб-разработка, фреймворки, frontend, backend
+      - DevOps: CI/CD, контейнеризация, облачные технологии
+      - Security: Информационная безопасность, уязвимости, защита данных
+      - Mobile: Разработка мобильных приложений
+      - Other: Другие технологические темы
+      
+      Ответь строго в формате JSON:
+      {
+        "is_relevant": true или false,
+        "category": "название категории из списка",
+        "confidence": число от 0.0 до 1.0,
+        "reason": "краткое объяснение (1-2 предложения)"
+      }
+    
+    # Список возможных категорий
+    categories:
+      - "AI/ML"
+      - "Web Development"
+      - "DevOps"
+      - "Security"
+      - "Mobile"
+      - "Other"
+    
+    # Минимальный порог уверенности (0.0-1.0)
+    # Только посты с confidence >= threshold будут приняты
+    threshold: 0.7
+    
+    # Теги для организации (опционально)
+    tags:
+      - "technology"
+      - "programming"
+
+  # Фильтр для вакансий
+  - id: job_offers
+    name: "Вакансии в IT"
+    description: "Отбирает посты с предложениями работы в IT"
+    enabled: true
+    
+    prompt: |
+      Это пост с вакансией или предложением работы в IT?
+      
+      Пост: {text}
+      
+      Определи:
+      1. Это вакансия?
+      2. Какая позиция?
+      3. Уровень (Junior/Middle/Senior)?
+      
+      Категории позиций:
+      - Developer: Разработчик (Python, JavaScript, Java, и т.д.)
+      - Designer: Дизайнер (UI/UX, графический)
+      - Manager: Менеджер проектов, продукт-менеджер
+      - QA: Тестировщик, QA инженер
+      - DevOps: DevOps инженер, системный администратор
+      - Data: Data Scientist, аналитик данных
+      - Other: Другие IT позиции
+      
+      Ответь JSON:
+      {
+        "is_job": true или false,
+        "position": "название позиции",
+        "level": "Junior/Middle/Senior/Not specified",
+        "category": "категория из списка",
+        "confidence": 0.0-1.0,
+        "reason": "объяснение"
+      }
+    
+    categories:
+      - "Developer"
+      - "Designer"
+      - "Manager"
+      - "QA"
+      - "DevOps"
+      - "Data"
+      - "Other"
+    
+    threshold: 0.8  # Более строгий порог для вакансий
+    
+    tags:
+      - "job"
+      - "career"
+
+  # Фильтр для образовательного контента
+  - id: educational
+    name: "Образовательный контент"
+    description: "Туториалы, обучающие материалы, курсы"
+    enabled: false  # Отключен по умолчанию
+    
+    prompt: |
+      Это образовательный контент (туториал, курс, гайд, обучающая статья)?
+      
+      Пост: {text}
+      
+      Категории:
+      - Tutorial: Пошаговое руководство
+      - Course: Курс или серия уроков
+      - Tips: Советы и лайфхаки
+      - Article: Обучающая статья
+      - Video: Обучающее видео
+      - Book: Книга или глава из книги
+      
+      JSON:
+      {
+        "is_educational": true/false,
+        "category": "категория",
+        "topic": "краткое описание темы",
+        "confidence": 0.0-1.0
+      }
+    
+    categories:
+      - "Tutorial"
+      - "Course"
+      - "Tips"
+      - "Article"
+      - "Video"
+      - "Book"
+    
+    threshold: 0.6
+    
+    tags:
+      - "education"
+      - "learning"
+
+  # Простой фильтр для начала
+  - id: simple_python
+    name: "Python контент"
+    description: "Простой фильтр для постов о Python"
+    enabled: true
+    
+    prompt: |
+      Этот пост связан с языком программирования Python?
+      
+      Пост: {text}
+      
+      Ответь коротко:
+      {
+        "is_python": true/false,
+        "confidence": 0.0-1.0,
+        "reason": "почему да или нет"
+      }
+    
+    categories:
+      - "Python"
+      - "Not Python"
+    
+    threshold: 0.75
+    
+    tags:
+      - "python"
+      - "programming"
+
+# Глобальные настройки для всех фильтров
+global_settings:
+  # Модель AI по умолчанию (если используется Groq)
+  default_model: "llama-3.1-8b-instant"
+  
+  # Температура для генерации (0.0-1.0, меньше = более предсказуемо)
+  temperature: 0.3
+  
+  # Максимальное количество токенов в ответе
+  max_tokens: 300
+  
+  # Таймаут запроса к AI (в секундах)
+  timeout: 30
+  
+  # Количество попыток при ошибке
+  retry_attempts: 3
+  
+  # Задержка между попытками (в секундах)
+  retry_delay: 2

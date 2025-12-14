@@ -1,0 +1,25 @@
+# Текстовые файлы с правильными окончаниями строк
+* text=auto
+
+# Документация
+*.md text
+*.txt text
+
+# Python
+*.py text
+
+# Конфигурация
+*.yaml text
+*.yml text
+*.json text
+*.toml text
+*.ini text
+*.cfg text
+
+# Shell скрипты
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Исключить из экспорта
+.gitattributes export-ignore
+.gitignore export-ignore

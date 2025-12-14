@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: ai-filter-db
+    environment:
+      POSTGRES_USER: ai_user
+      POSTGRES_PASSWORD: ai_password
+      POSTGRES_DB: ai_preposition
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ai_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis Cache & Message Broker
+  redis:
+    image: redis:7-alpine
+    container_name: ai-filter-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Application (раскомментировать когда будет готово)
+  # app:
+  #   build: .
+  #   container_name: ai-filter-app
+  #   depends_on:
+  #     - postgres
+  #     - redis
+  #   env_file:
+  #     - .env
+  #   volumes:
+  #     - ./logs:/app/logs
+  #   restart: unless-stopped
+
+  # Celery Worker (раскомментировать когда будет готово)
+  # celery-worker:
+  #   build: .
+  #   container_name: ai-filter-celery
+  #   command: celery -A src.tasks.celery_app worker --loglevel=info
+  #   depends_on:
+  #     - postgres
+  #     - redis
+  #   env_file:
+  #     - .env
+  #   restart: unless-stopped
+
+  # Celery Beat (раскомментировать когда будет готово)
+  # celery-beat:
+  #   build: .
+  #   container_name: ai-filter-beat
+  #   command: celery -A src.tasks.celery_app beat --loglevel=info
+  #   depends_on:
+  #     - postgres
+  #     - redis
+  #   env_file:
+  #     - .env
+  #   restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+
+
+
+
+

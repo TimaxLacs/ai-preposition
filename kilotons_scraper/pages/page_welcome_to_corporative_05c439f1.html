@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta name="description" content="Корпоративный режим использования Килотонс предназначен для сотрудников юридических лиц.">
+    <meta name="keywords" content="корпоративный режим, зарабатывать, Килотонс, торгиклаб">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<title>Бизнес режим - Килотонс</title>
+    <script type="text/javascript">
+    var _UserID = null;
+    var IMAGES_HOST_URL = '';
+</script>
+
+
+
+<link rel="stylesheet" href="/static/techcrunch/style/style.css" type="text/css" media="screen,projection"/>
+<link rel="stylesheet" href="/static/techcrunch/style/header.css" type="text/css" media="screen,projection"/>
+<link rel="stylesheet" href="/static/techcrunch/style/footer.css" type="text/css" media="screen,projection"/>
+<link rel="stylesheet" href="/static/techcrunch/style/jModal.css" type="text/css" media="screen,projection"/>
+
+<link rel="stylesheet" href="/static/techcrunch/style/tipTip.css" type="text/css" media="screen,projection"/>
+<link rel="stylesheet" href="/static/techcrunch/style/select.css" type="text/css" media="screen,projection"/>
+
+<script type="text/javascript" src="/static/lib/jquery/jquery-2.1.1.min.js"></script>
+<link href="/static/lib/jquery-ui/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
+<script src="/static/lib/jquery-ui/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/static/lib/jquery-ui/jquery-ui.min.css">
+<script type="text/javascript" src="/static/techcrunch/js/jquery/jquery.tmpl.js"></script>
+
+<script type="text/javascript" src="/static/techcrunch/js/jquery/jquery.inputmask.js"></script>
+<script type="text/javascript" src="/static/techcrunch/js/jslider.js"></script>
+<script type="text/javascript" src="/static/techcrunch/js/jquery.tipTip.js"></script>
+
+<!-- arcticModal -->
+<script src="/static/techcrunch/js/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+<link rel="stylesheet" href="/static/techcrunch/js/arcticmodal/jquery.arcticmodal-0.3.css">
+<link rel="stylesheet" href="/static/techcrunch/js/arcticmodal/themes/simple.css">
+<!-- /arcticModal -->
+
+<script type="text/javascript" src="/static/techcrunch/js/jModal.js"></script>
+<script type="text/javascript" src="/static/techcrunch/js/scriptjava.js"></script>
+<script type="text/javascript" src="/static/techcrunch/js/index.js"></script>
+<script type="text/javascript" src="/static/techcrunch/js/dataloader.js"></script>
+
+<script src="/static/c2m/global.js"></script>
+
+
+
+<!--[if IE]>
+<script type="text/javascript">
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('header');
+    document.createElement('section');
+    document.createElement('nav');
+    document.createElement('menu');
+    document.createElement('time');
+    document.createElement('progress');
+    document.createElement('footer');
+</script>
+<![endif]-->
+
+<script>
+var productsImg = {
+236500 : 'ipad_silver',
+236502 : 'ipad_silver',
+236503 : 'ipad_silver',
+294494 : 'ipad_silver',
+
+241440 : 'ipad_gray',
+241441 : 'ipad_gray',
+241442 : 'ipad_gray',
+241443 : 'ipad_gray',
+
+238813 : 'ipad_silver',
+238814 : 'ipad_silver',
+238815 : 'ipad_silver',
+294493 : 'ipad_silver',
+
+241446 : 'ipad_gray',
+241444 : 'ipad_gray',
+241445 : 'ipad_gray',
+241447 : 'ipad_gray',
+
+236508 : 'iphone_black',
+236509 : 'iphone_black',
+236570 : 'iphone_black',
+
+236505 : 'iphone_gold', //no in list
+236506 : 'iphone_gold',
+236507 : 'iphone_gold',
+
+238805 : 'iphone_gold',
+238806 : 'iphone_gold',
+238807 : 'iphone_gold',
+
+236510 : 'iphone_silver',
+236511 : 'iphone_silver',
+236512 : 'iphone_silver',
+238810 : 'iphone_silver',
+238810 : 'iphone_silver',
+238811 : 'iphone_silver',
+238812 : 'iphone_silver',
+
+237603 : 'samsung_s4_white',
+237601 : 'samsung_s4_white',
+237602 : 'samsung_s4_white',
+
+241449 : 'samsung_s4_red',
+241471 : 'samsung_s4_red',
+241473 : 'samsung_s4_red',
+
+241470 : 'samsung_s4_black',
+247472 : 'samsung_s4_black',
+241474 : 'samsung_s4_black',
+241472 : 'samsung_s4_black',
+
+238817 : 'samsung_note3_white',
+241448 : 'samsung_note3_black',
+
+238818 : 'macbook_air',
+249497 : 'macbook_air',
+238819 : 'macbook_air',
+249498 : 'macbook_air',
+241482 : 'macbook_air',
+241483 : 'macbook_air',
+
+238900 : 'macbook_pro',
+249495 : 'macbook_pro',
+238901 : 'macbook_pro',
+349496 : 'macbook_pro',
+241480 : 'macbook_pro',
+241481 : 'macbook_pro',
+
+249499 : 'gta5_xbox',
+254410 : 'gta5_ps3',
+243231 : 'gta5_xbox',
+254410 : 'gta5_ps3',
+243230 : 'gta5_ps3'
+
+};
+</script>
+<script id="bidStatsTmpl" type="text/x-jquery-tmpl">
+    <div class="el parent" style="border-top:none;padding-top:0;" rel="${productId}">
+        <div class="photo">
+            <div class="td">
+                <img src="/static/techcrunch/images/products/{{html productsImg[productId]}}_min.png" alt="" title="">
+            </div>
+        </div>
+        <div class="linkAmount">
+            <div class="link"><a href="javascript:void(0)">${productName}</a></div>
+            <div class="amount">
+                <span class="text">собрано денег</span>
+                <span class="number">${moneyTotal}</span>
+            </div>
+        </div>
+        <div class="join user_action">
+            <a href="javascript:void(0)" class="tipduwn a_join" title="Присоединиться"><img
+                    src="/static/techcrunch/images/action_join.png"/></a>
+        </div>
+        <div class="clr"></div>
+    </div>
+</script>
+
+<script id="customerReviewsTmpl" type="text/x-jquery-tmpl">
+<div class="el">
+    <div class="head">
+        <div class="photo">
+            <a href="#"><img class="hoverOut" src="${img}"/></a>
+        </div>
+        <div class="name">
+            <div><a href="javascript:void(0)">${name}</a></div>
+            <div><span>${occupation}</span></div>
+            <div>
+                        <span class="rating">
+                            <img src="/static/techcrunch/images/right_panel/icon_star_yellow.png" alt="1" title="1">
+                            <img src="/static/techcrunch/images/right_panel/icon_star_yellow.png" alt="2" title="2">
+                            <img src="/static/techcrunch/images/right_panel/icon_star_yellow.png" alt="3" title="3">
+                            <img src="/static/techcrunch/images/right_panel/icon_star_yellow.png" alt="4" title="4">
+                            <img src="/static/techcrunch/images/right_panel/icon_star_yellow.png" alt="5" title="5">
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <p>${description}</p>
+    </div>
+</div>
+</script>
+<script>
+window.formatMoney = function formatMoney(money) {
+min = 20000;
+max = 70000;
+if (money == null) {
+//money = Math.random() * (max - min) + min;
+//money = money.toFixed(0);
+money = '0';
+}
+return money.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1.');
+}
+
+</script>
+<script id="allBidsTmpl" type="text/x-jquery-tmpl">
+<article class="productItem parent" rel="${productId}">
+    <div class="productImage">
+        <img src="/static/techcrunch/images/products/{{html productsImg[productId]}}_min.png"/>
+    </div>
+    <div class="productName">
+        ${productName}
+    </div>
+    <div class="collectedMoney count">
+        <span>{{html String(moneyTotal).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$&.')}}</span>
+
+        <div class="join user_action">
+            <a href="javascript:void(0)" class="tipduwn button_buy" title="Продавать"><img
+                    src="/static/techcrunch/images/action_sell.png"/></a>
+        </div>
+    </div>
+    <div class="count deal">
+        ${(+takenCount).toFixed(0)}
+    </div>
+    <div class="probability">
+        <div class="tipduwn" title="Вероятность, с которой вы можете получить этот товар."><span class="percents">${(+buyProbability*100).toFixed(0)}</span>%</div>
+    </div>
+<div class="people count">
+    <span class="count"><img src="/static/techcrunch/images/people.png"/><span class="count_people">${participatorsCount}</span></span>
+
+    <div class="join user_action">
+        <a href="javascript:void(0)" class="tipduwn a_join" title="Присоединиться"><img
+                src="/static/techcrunch/images/action_join.png"/></a>
+    </div>
+</div>
+<div class="clr"></div>
+</article>
+</script>
+
+<script id="allBidsTmplIndex" type="text/x-jquery-tmpl">
+			<div class="el" rel="${productId}">
+				<div class="img"><a href="#"><img src="/static/techcrunch/images/products/{{html productsImg[productId]}}_min.png"></a></div>
+				<div class="cont">
+					<a class="name" href="#">${productName}</a>
+					<div class="tabl">
+						<div class="money">
+							<span class="topText">cобрано денег (руб):</span>
+							<span class="numb">{{html String(moneyTotal).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$&.')}}</span>
+						</div>
+						<div class="deals">
+							<span class="topText">успешных сделок:</span>
+							<span class="numb">${(+takenCount).toFixed(0)}</span>
+						</div>
+						<div class="involved">
+							<span class="topText">участвуют:</span>
+							<span class="numb">${participatorsCount}</span>
+						</div>
+						<div class="join user_action">
+							<a class="tipduwn a_join" title="Присоединиться" href="/p/prod/now_buy"><img src="/static/techcrunch/images/action_join.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+</script>
+
+<script>
+function change(placeDate) {
+    var d = new Date(placeDate);
+    var res = [d.getDate(), d.getMonth()+1, d.getFullYear()].join('.');
+    res += ' ' + d.getHours() + ':' + d.getMinutes();
+    return res;
+}
+function getDate(placeDate) {
+    var d = new Date(placeDate);
+    var res = [d.getDate(), d.getMonth()+1, d.getFullYear()].join('.');
+    return res;
+}
+</script>
+
+<script id="allPurchaseTmpl" type="text/x-jquery-tmpl">
+<div class="item {{if bidStatus == 'BID_STATUS_ACTIVE'}}activeBid{{/if}}{{if bidStatus == 'BID_STATUS_TAKE'}}takeBid{{/if}}"
+     id="id${id}" rel="${id}">
+    <div class="productImage">
+        <img src="/static/techcrunch/images/products/{{html productsImg[productDto.id]}}_min.png"/>
+    </div>
+    <div class="productName">
+        <span class="name">${productDto.name}</span>
+        <span class="summa">вы поставили <span>${sum}</span> руб.<br/>{{html change(placeDate)}}</span>
+    </div>
+    {{if bidStatus == 'BID_STATUS_ACTIVE'}}
+    <div class="div_scroll">
+        <div class="top_line">
+            <div class="my_prices">Моя цена:</div>
+            <div class="my_prob">Вероятность:</div>
+            <div class="clr"></div>
+        </div>
+        <div class="underscroll_line">
+            <div class="my_prices"><span id="money_id${id}" class="dj">${sum}</span><span class="rub">руб.</span></div>
+            <div class="my_prob"><span class="probability" id="probability_id${id}">
+                    <span class="pros"><span class="numb percents" id="percentage_id${id}">${(productDto.bidsStat.buyProbability * 100).toFixed(0)}</span>%</span></span>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="scroll">
+            <div class="black_line id${id}"></div>
+            <div class="black"></div>
+            <div class="slider" id="polz_id${id}"></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="buttonAdd">
+            Увеличить
+        </div>
+        <div class="buttonTakeMoney">
+            Забрать деньги
+        </div>
+    </div>
+    <div class="buttonBuy">
+        <div class="button_buy_now">
+            Купить сразу
+        </div>
+    </div>
+
+    {{/if}}
+    {{if bidStatus == 'BID_STATUS_TAKE'}}
+    <div class="congratulation">
+        <div class="message">
+            Поздравляем, твоя<br/>ставка <span>${sum}</span> руб.<br/>принята
+        </div>
+        <div class="contacts">
+            Контакты продавца:<br/><br/>
+            ООО “Connect2me”<br/>
+            8 (985)600-4466<br/>
+            info@connect2me.com
+        </div>
+        <div class="code">
+            код покупателя:
+            <div>${bidCode}</div>
+        </div>
+    </div>
+    {{/if}}
+
+
+    <div class="clr"></div>
+</div>
+</script>
+
+<script id="oneReview" type="text/x-jquery-tmpl">
+<div class="oneReview">
+    <div class="avatar">
+        <img src="${img}"/>
+    </div>
+    <div class="userName">
+        <a href="#">${name}</a><br/>
+        <span class="position">${occupation}, Москва</span>
+    </div>
+    <div class="raiting"><img src="/static/techcrunch/images/stars5.png"/></div>
+    <div class="clr"></div>
+    {{if description.length < 500}}
+        <p>${description}</p>
+    {{else}}    
+        <p>{{html description.substr(0,200)}}<span id="review${id}" class="hide">{{html description.substr(200)}}</span></p>
+        <a href="javascript:void(0)" class="seeAll" rel="review${id}">
+            <div class="allChars">
+                <img src="/static/techcrunch/images/arrow_down.png"/><span>Полностью</span>
+            </div>
+        </a>
+    {{/if}}
+</div>
+</script>
+
+<script id="cartTmpl" type="text/x-jquery-tmpl">
+<div class="el" id="bs_tov${id}">
+    <div class="delete del${id}">
+        <div class="text">Вы уверены что хотите удалить товар из корзины?</div>
+        <div class="btns">
+            <a href="#" name="${id}" class="buttonBlue yes">Да</a>
+            <a href="#" name="${id}" class="buttonBlue no">Оставить</a>
+        </div>
+    </div>
+    <table class="prodTbl">
+        <tr>
+            <td class="img"><a href="/p/dudu/product/${id}"><img src="/static/techcrunch/images/products/{{html productsImg[id]}}_min.png" alt="" title=""></a>
+            </td>
+            <td class="link">${index}<a href="/p/dudu/product/${id}">${name}</a></td>
+            <td class="number">
+                <div class="nbm">
+                    <div class="minus" name="${id}"></div>
+                    <div class="cn"><span>${cnt}</span> шт.</div>
+                    <div class="plus" name="${id}"></div>
+                </div>
+            </td>
+            <td class="summatd">
+                <div class="summa"><span>${price}</span> руб.</div>
+            </td>
+        </tr>
+    </table>
+</div>
+</script>
+
+<script id="cartTmplNew" type="text/x-jquery-tmpl">
+<div class="el" id="bs_tov${id}">
+    <div class="delete del${id}">
+        <div class="text">Вы уверены что хотите удалить товар из корзины?</div>
+        <div class="btns">
+            <a href="#" name="${id}" class="buttonBlue yes">Да</a>
+            <a href="#" name="${id}" class="buttonBlue no">Оставить</a>
+        </div>
+    </div>
+    <table class="prodTbl">
+        <tr>
+            <td class="img"><a href="/product/${product_id}"><img src="/static/products/prodImage/s/${product_id}.jpeg" alt="" title=""></a>
+            </td>
+            <td class="link"><a href="/product/${product_id}">${name}</a></td>
+            <td class="number">
+                <div class="nbm">
+                    <div class="minus" name="${id}"></div>
+                    <div class="cn"><span>${cnt}</span> шт.</div>
+                    <div class="plus" name="${id}"></div>
+                </div>
+            </td>
+            <td class="summatd">
+                <div class="summa"><span>${price}</span> руб.</div>
+            </td>
+        </tr>
+    </table>
+</div>
+</script>
+
+<script id="collectMoneyTmpl" type="text/x-jquery-tmpl">
+<li class="item">
+    <div class="image"><a href="/product/${product.id}"><img src="{{html IMAGES_HOST_URL}}/static/products/prodImage/l/${product.id}.png" /></a></div>
+    <div class="name"><a href="/product/${product.id}">${product.name}</a></div>
+    <div class="price">{{html String(sellitemWithConfigList[0].sellItem.price * 11).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$&.')}} руб.</div>
+    <div class="buy"><a href="/product/${product.id}">Взять грант</a></div>
+</li>    
+</script>
+
+<script id="bestProductsTmpl" type="text/x-jquery-tmpl">
+<li class="item">
+    <div class="image"><a href="/product/${product.id}"><img src="{{html IMAGES_HOST_URL}}/static/products/prodImage/l/${product.id}.png" /></a></div>
+    <div class="name"><a href="/product/${product.id}">${product.name}</a></div>
+    <div class="price">{{html String(sellitemWithConfigList[0].sellItem.price).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$&.')}} руб.</div>
+    <div class="buy"><a href="/product/${product.id}">Купить дешевле</a></div>
+</li>    
+</script>
+
+<script id="recommendProductsTmpl" type="text/x-jquery-tmpl">
+<div class="item">
+    <div class="image"><a href="/product/${product.id}"><img src="{{html IMAGES_HOST_URL}}/static/products/prodImage/l/${product.id}.png" /></a></div>
+    <div class="name"><a href="/product/${product.id}">${product.name}</a></div>
+    <div class="price">{{html String(sellitemWithConfigList[0].sellItem.price).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$&.')}} руб.</div>
+    <div class="buy"><a href="/product/${product.id}">Купить дешевле</a></div>
+</div>    
+</script>
+
+<script id="allGrantsTmpl" type="text/x-jquery-tmpl">
+<div class="grant" id='id${id}' rel="${id}" sellitemid="${sellitemId}">
+    <div class="image"><img src="{{html IMAGES_HOST_URL}}/static/sellitem/image/l/${sellitemId}.png" /></div>
+    <div class="info">
+        <div style="float:left"><h2><a href="javascript:void(0)">${productName}</a></h2>
+        <p>Срок действия до: {{html getDate(endDate)}}</p></div>
+        <div class="take_grant">
+            <a href="javascript:void(0)">Взять грант</a><img src="/static/techcrunch/images/landing/help_ico.png">
+        </div> 
+        <div class="clr"></div>
+
+        <div class="item" style="text-align:left">
+            <p>Количество штук: <span class='amount' style='font-size:11px'>${number}</span></p>
+            <div class="slider_quantity" id="polz_id${id}"><div class='black_line'></div></div>
+        </div>
+        <div class="item" style='border-left:1px solid #E3E3E3;border-right:1px solid #E3E3E3;padding-bottom:10px;'>
+            <p>Средняя цена за штуку:</p>
+            <span class="price"><span>${price}</span> руб.</span>
+        </div>  
+        <div class="item">
+            <p>Сумма гранта:</p>
+            <span class="sum_grant"><span>${sum}</span> руб.</span>
+        </div> 
+        <div class="clr"></div>
+    </div>    
+    <div class="clr"></div>
+</div>    
+</script>
+
+
+<script id="oneReviewTmpl" type="text/x-jquery-tmpl">
+<div class="one_review">
+    <div class="avatar">
+        <img src="${img}" />
+    </div>   
+    <div class="user_info">
+        <a href="javascript:void(0)">${name}</a><br />
+        <span class="profession">${occupation}, Москва</span><br />
+        <img title="1" alt="1" src="/static/techcrunch/images/right_panel/icon_star_yellow.png">
+        <img title="1" alt="1" src="/static/techcrunch/images/right_panel/icon_star_yellow.png">
+        <img title="1" alt="1" src="/static/techcrunch/images/right_panel/icon_star_yellow.png">
+        <img title="1" alt="1" src="/static/techcrunch/images/right_panel/icon_star_yellow.png">
+        <img title="1" alt="1" src="/static/techcrunch/images/right_panel/icon_star_yellow.png">
+    </div>  
+    <div class="clr"></div>
+    <div>
+    {{if description.length < 500}}
+        <p>${description}</p>
+    {{else}}    
+        <p>{{html description.substr(0,200)}}<span id="review${id}" class="hide">{{html description.substr(200)}}</span></p>
+        <a href="javascript:void(0)" class="seeAll" rel="review${id}">
+            <div class="allChars">
+                <img src="/static/techcrunch/images/arrow_down.png"/><span>Полностью</span>
+            </div>
+        </a>
+    {{/if}}
+
+    </div>    
+</div>
+
+
+</script>
+
+<script id="recProductsTmpl" type="text/x-jquery-tmpl">
+<div class="rec_item" style="border-top:none;">
+    <div class="image"><img src="{{html IMAGES_HOST_URL}}/static/products/prodImage/l/${product.id}.png" /></div>
+    <div class="about_prod">
+        <a href="/product/${product.id}">${product.name}</a>
+        <span class="price">{{html String(sellitemWithConfigList[0].sellItem.price).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$&.')}} руб.</span>
+        <a href="/product/${product.id}" class="green_button">Купить дешевле</a>
+    </div>
+    <div class="clr"></div>
+</div>
+</script><link rel="stylesheet" href="/static/techcrunch/style/index.css" type="text/css" media="screen,projection"/>
+    <!--Select2me-->
+    <script src="/static/techcrunch/js/select2me/jquery.selectbox.c2me.js"></script>
+    <link href="/static/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="/static/techcrunch/js/select2me/selectbox.c2me.style.css">
+    <link rel="stylesheet" href="/static/c2m/global.css">
+    <link rel="stylesheet" href="/static/features/prof/css/welcome_prof.css">
+    <!--/Select2me-->
+    <script type="text/javascript" src="/static/js/function.js"></script>
+    <script src="/static/techcrunch/js/welcome_to_prof.js"></script>
+    <script src="/static/features/landing-new/js/animatescroll.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.reg_prof').click(function() {
+                $(window).resize(function(){resize_func('.checkCompany')});
+                resize_func('.checkCompany');
+                jModal(".checkCompany", $(this));
+                $('.search_input input').focus();
+            });
+
+            $('#type_company').selectbox();
+            $('#type_search').selectbox();
+
+            /*$('#type_search').change(function() {
+             if ($(this).val() == 'by_inn') {
+             $('.type_company').hide();
+             $('.search_result').width(543);
+             } else {
+             $('.type_company').show();
+             $('.search_result').width(458);
+             }
+             });*/
+            $('.search_result').width(543);
+            $('.search_input').width(323);
+            $('.search_result .item').hover(
+                    function() {
+                        $(this).find('.button_blue').show();
+                    },
+                    function() {
+                        $(this).find('.button_blue').hide();
+                    }
+            );
+
+
+            var companies = ['ООО ТоргиКлаб', 'ООО Ковер'];
+            var amountComp = [0, '1 компанию', '2 компании'];
+
+            function searchEnter(search_string) {
+                $('.searchEnter_result, .searchEnter_result .item').hide();
+                var amount = 0;
+                $.each(companies,function(k,v) {
+                    if (v.indexOf(search_string) != -1) {
+                        $('.searchEnter_result').show();
+                        $('.item[rel="' + k + '"]').show();
+                        amount++;
+                    }
+                });
+                if (!amount) {
+                    $('.shure').hide();
+                    $('.no_result').show();
+                } else {
+                    $('.searchEnter_result .amount').text(amountComp[amount]);
+                }
+            }
+
+            $('input[name = "name_company"]').keyup(function(key) {
+                var search_string = $(this).val();
+                if (search_string.replace(' ','') == '') return;
+                $('.search_result, .search_result .item').hide();
+                $('.shure').show();
+                $('.no_result').hide();
+
+                if (key.keyCode == 13) {
+                    searchEnter(search_string);
+                    return;
+                }
+                $.each(companies,function(k,v) {
+                    if (v.indexOf(search_string) != -1) {
+                        $('.search_result').show();
+                        $('.search_result .item[rel="' + k + '"]').show();
+                        var name_company = companies[k].replace(new RegExp(search_string,'g'),'<b>' + search_string + '</b>');
+                        $('.item[rel="' + k + '"]').find('.name_company').html(name_company);
+                    }
+                });
+            });
+
+            $('.find_button').click(function() {
+                var search_string = $('input[name="name_company"]').val();
+                if (search_string.replace(' ','') == '') return;
+                $('.search_result, .search_result .item').hide();
+                $('.shure').show();
+                $('.no_result').hide();
+                searchEnter(search_string);
+            });
+
+            $(document).click(function(event) {
+                if ($(event.target).closest(".search_result").length) return;
+                $('.search_result, .search_result .item').hide();
+                event.stopPropagation();
+            });
+            $('.select').click(function(event) {
+                $('.search_result, .search_result .item').hide();
+            });
+
+            $('.my_company').click(function() {
+                $(window).resize(function(){resize_func('.additionToCompany')});
+                resize_func('.additionToCompany');
+                $('.checkCompany').hide();
+                jModal(".additionToCompany", $(this));
+
+            });
+
+            var nameRus = $(".additionToCompany .corpUser .formCorp .fbl input#name"),
+                    nameEng = $(".additionToCompany .corpUser .formCorp .fbl input#nameLat"),
+                    surnameRus = $(".additionToCompany .corpUser .formCorp .fbl input#surname"),
+                    surnameEng = $(".additionToCompany .corpUser .formCorp .fbl input#surnameLat"),
+                    fullnameRus = $(".additionToCompany .corpUser .formCorp .fbl input#fullname"),
+                    fullnameEng = $(".additionToCompany .corpUser .formCorp .fbl input#fullnameLat");
+            transtelFunc(nameRus, nameEng);
+            transtelFunc(surnameRus, surnameEng);
+            transtelFunc(fullnameRus, fullnameEng);
+
+            $('.additionToCompany .green_button').click(function() {
+                $(window).resize(function(){resize_func('.additionToCompanyMessage')});
+                resize_func('.additionToCompanyMessage');
+                $('.additionToCompany').hide();
+                jModal(".additionToCompanyMessage", $(this));
+            });
+        });
+    </script>
+</head>
+
+<body class="lang-ru">
+<div class="b-wrapper">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter23354653 = new Ya.Metrika({id:23354653,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div style="display: none"><img src="//mc.yandex.ru/watch/23354653" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!--Google analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-44074133-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!--/Google analytics-->
+<link rel="stylesheet" href="/static/jspm_init/base.css">
+<link rel="stylesheet" href="/static/c2m/header/css/common.css">
+<link rel="stylesheet" href="/static/c2m/header/css/popup_info.css">
+<link rel="stylesheet" href="/static/lib/arcticmodal/arcticmodal-0.3.css">
+<link rel="stylesheet" href="/static/c2m/global.css">
+<link rel="stylesheet" href="/static/features/sidebar/css/sidebar.css">
+<link rel="stylesheet" href="/static/features/new_products/css/buy-informer.css">
+
+<!-- authorization form -->
+<link rel="stylesheet" href="/static/jspm_widgets/authorization-form/base.css">
+<link rel="stylesheet" href="/static/jspm_widgets/authorization-form/mods.css">
+<!-- end authorization form -->
+
+<script src="/static/lib/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/lib/arcticmodal/arcticmodal-0.3.min.js"></script>
+
+<link href="/static/favicon.ico" rel="icon" type="image/x-icon" />
+
+<script>
+    window.DEV = false;
+    window.globalLocale = "ru";
+    window.targets = {
+        KILOTONS: 'kilotons',
+        TORGICLUB: 'torgiclub',
+        STROYMETERS: 'stroymeters',
+    };
+    window.TARGET_ID = "kilotons";
+    window.TARGET_NAME = "Килотонс";
+</script>
+<script src="/static/dist/header_adapter_for_legacy_page.js"></script>
+<script type="text/javascript">
+	window.globalLocale =  "ru";
+	function init(){
+		var requireWait = setInterval(function() {
+			if('require' in window){
+				clearInterval(requireWait);
+				require.config({
+					paths: {
+						mainScript:			'/static/features/main',
+
+					},
+
+					shim: {
+						'mainScript': {
+
+						}
+					}
+				});
+
+
+				require([
+					'mainScript',
+
+				], function( ){
+
+				});
+			}
+		}, 10);
+	};
+
+
+
+	if (typeof window.requirejs != 'function') {
+		init();
+	}
+
+</script>
+
+<div class="_header"></div>
+
+<script type="text/javascript">
+			var balance = null;
+			var _UserID = null;
+		</script>
+	<div class="modalBackground"></div>
+
+<script>
+	$('.j-popup-checkbox').click(function (e) {
+		$(".j-popup-checkbox").toggleClass("select");
+
+	});
+
+	$('.j-popup-info-business').mouseenter(function(e){
+		$('.m-popup-business').toggleClass("f-hidden");
+
+	});
+	$('.j-popup-info-business').mouseleave(function(e){
+		$('.m-popup-business').toggleClass("f-hidden");
+	});
+
+
+
+	$('.j-popup-info-prof').mouseover(function(e){
+		$('.m-popup-proff').toggleClass("f-hidden");
+	});
+	$('.j-popup-info-prof').mouseout(function(e){
+		$('.m-popup-proff').toggleClass("f-hidden");
+	});
+
+	$('.j-popup-info-deposit').mouseover(function(e){
+		$('.m-popup-deposit').toggleClass("f-hidden");
+	});
+	$('.j-popup-info-deposit').mouseout(function(e){
+		$('.m-popup-deposit').toggleClass("f-hidden");
+	});
+
+	$('#home').mouseover(function(e){
+		$('.m-popup-today').removeClass("f-hidden");
+	});
+	$('#home').mouseout(function(e){
+		$('.m-popup-today').addClass("f-hidden");
+	});
+
+	$('#geolocation').mouseover(function(e){
+		$('.m-popup-geo').removeClass("f-hidden");
+	});
+	$('#geolocation').mouseout(function(e){
+		$('.m-popup-geo').addClass("f-hidden");
+	});
+
+	$('#contacts').mouseover(function(){
+		$('.m-popup-contacts').removeClass("f-hidden");
+	});
+	$('#contacts').mouseout(function(){
+		$('.m-popup-contacts').addClass("f-hidden");
+	});
+
+	$('#dialogs').mouseover(function(e){
+		$('.m-popup-dialogs').removeClass("f-hidden");
+	});
+	$('#dialogs').mouseout(function(e){
+		$('.m-popup-dialogs').addClass("f-hidden");
+	});
+
+	$('#buy').mouseover(function(e){
+		$('.m-popup-buy').removeClass("f-hidden");
+	});
+	$('#buy').mouseout(function(e){
+		$('.m-popup-buy').addClass("f-hidden");
+	});
+
+	$('#grants a').mouseover(function(e){
+		$('.m-popup-grants').removeClass("f-hidden");
+	});
+	$('#grants a').mouseout(function(e){
+		$('.m-popup-grants').addClass("f-hidden");
+	});
+
+	$('#soon a').mouseover(function(event){
+		$('.m-popup-soon').removeClass("f-hidden")
+		{
+			var popupSoonSelector = $(this);
+			var position = popupSoonSelector.offset();
+			$('.m-popup-soon').show(function() {
+				$(this).offset({top: position.top + 1, left: position.left});
+			});
+		};
+	});
+	$('#soon a').mouseout(function(e){
+		$('.m-popup-soon').addClass("f-hidden");
+	});
+
+
+</script>
+
+
+<script>
+    if (typeof $('.j-tooltip-top').tooltip === 'function') {
+        $('.j-tooltip-top').tooltip({
+            placement: 'top',
+            viewport: {selector: 'body', padding: 2}
+        });
+    }
+	$('.j-popup-top-prof').mouseover(function(){
+		$('.b-popup-tooitip-prof').toggleClass("active");
+	});
+	$('.j-popup-top-prof').mouseout(function(){
+		$('.b-popup-tooitip-prof').toggleClass("active");
+	});
+	$('.j-popup-top-corp').mouseover(function(){
+		$('.b-popup-tooitip-corp').toggleClass("active");
+	});
+	$('.j-popup-top-corp').mouseout(function(){
+		$('.b-popup-tooitip-corp').toggleClass("active");
+	});
+</script>
+<aside class="b-sidebar">
+	<nav role="navigation" class="navbar-default">
+		<div class="sidebar-collapse j-sidebar__menu">
+				<ul class="nav">
+					<li class="nav-header m-bg">
+						<div class="profile-element">
+							<span>Мой Профиль</span>
+							<a href="/logout" class="pull-right b-logout"><i class="nav-logout"></i></a>
+						</div>
+					</li>
+					<li class="nav-header m-bg-hover">
+						<div class="profile-element m-variable">
+							<i class="nav-user"></i>
+							<span>&nbsp;</span>
+						</div>
+					</li>
+					<li>
+						<a href="/page/wallet">
+							<i class="nav-wall"></i>
+							<span class="nav-label">Баланс&nbsp;&nbsp;&nbsp;</span>
+						<span class="b-amount-deposit "> <!-- убран класс badge -->
+							<span class="j-sidebar__balance"></span>
+						</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="nav-gift"></i>
+							<span class="nav-label">Бонусный счет&nbsp;&nbsp;&nbsp;</span>
+						<span class="b-amount-bonus "> <!-- убран класс badge -->
+							<span class="j-sidebar__bonus"></span>
+						</span>
+						</a>
+					</li>
+					<li>
+							<a href="/page/welcome_to_prof" class="m-proff-active"><i class="nav-lock"></i> <span class="nav-label">Профессиональный режим </span></a>
+						</li>
+					<li>
+							<a href="/page/welcome_to_corporative" class="m-corp-active"><i class="nav-lock"></i> <span class="nav-label">Бизнес режим </span></a>
+						</li>
+					<li>
+						<a href="/page/rates"><i class="nav-retweet"></i> <span class="nav-label">Управление аккаунтом </span></a>
+					</li>
+					<li>
+						<a href="/page/profile/edit"><i class="nav-cog"></i> <span class="nav-label">Настройки </span></a>
+					</li>
+					<li class="account-menu-topup">
+						<a href="#"><i class="nav-creditcard"></i> <span class="nav-label">Пополнить баланс </span> </a>
+					</li>
+					<li>
+						<a href="/page/wallet"><i class="nav-export"></i> <span class="nav-label">Вывести средства </span></a>
+					</li>
+					<!--<li>-->
+					<!--<a href="#"><i class="nav-shopping-basket"></i> <span class="nav-label">Мои Товары</span></a>-->
+
+					<!--</li>-->
+					<!--<li>-->
+					<!--<a href="#"><i class="nav-screen"></i> <span class="nav-label">Мои Услуги</span></a>-->
+
+					<!--</li>-->
+
+					<!--<li>-->
+					<!--<a href="#"><i class="nav-users"></i> <span class="nav-label">Аудитории</span></a>-->
+					<!--</li>-->
+					<li>
+						<a href="/page/addition"><i class="nav-bars"></i> <span class="nav-label">Добавить товар</span></a>
+					</li>
+					<li>
+						<a href="/page/purchases"><i class="nav-add-prod"></i> <span class="nav-label">Покупки</span></a>
+					</li>
+					<li>
+						<a href="/logout"><i class="nav-logout"></i> <span class="nav-label">Выход</span></a>
+					</li>
+				</ul>
+				<ul class="nav nav-bottom">
+					<li class="nav-header">
+						<div class="profile-element">
+							<span>Наши контакты</span>
+						</div>
+					</li>
+					<li>
+						<a href="mailto:info@kilotons.ru"><i class="nav-mail"></i> <span class="nav-label">info@kilotons.ru</span></a>
+					</li>
+					<li class="nav-header m-bg-hover">
+						<div class="profile-element">
+							<i class="nav-phone">
+							</i><span>8-812-332-54-21</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+</aside>
+<div class="b-container">
+        <section class="main-wrapper">
+            <div class="b-promo m-promo-corp">
+                    <div class="b-promo-content">
+                        <h2>Добро пожаловать в Бизнес Килотонс</h2>
+                        <p class="m-border-bottom">
+                            Бизнес режим использования Килотонс предназначен,  <br/>
+                            в первую очередь, для юридических лиц,  <br/>
+                            но может использоваться и частными предпринимателями.
+                        </p>
+                        <p>Стань Бизнес пользователем</p>
+                        <div class="b-tariff-choice m-corp clearfix">
+                            <ul class="">
+                                <li>
+                                    <a class="tariff-item prices2" href="#" onclick="$('#prices2').animatescroll({scrollSpeed:100,easing:'easeInSine'});">
+                                        <p>месяц</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tariff-item prices3" href="#" onclick="$('#prices3').animatescroll({scrollSpeed:100,easing:'easeInSine'});">
+                                        <p>месяцев</p>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a class="tariff-item prices4" href="#" onclick="$('#prices4').animatescroll({scrollSpeed:100,easing:'easeInSine'});">
+                                        <p>год</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="b-content">
+            <div class="welcome-prof">
+                <div class="new clearfix">
+                        <div>
+                            <h3 class="m-color">Воспользуйся преимуществами <br/>
+                                                Бизнес режима</h3>
+                        </div>
+                        <div class="item">
+                            <div class="image m-bg-corp"><span class="icons-store"></span></div>
+                            <div class="text">
+                                <p>Бизнес-возможности</p>
+                                Используй Килотонс <br/> как новый канал <br/> продажи товаров и услуг.
+                                <br/>
+                                Используй возможность прямой коммуникации  <br/>
+                                с покупателями и получай деньги немедленно
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image m-bg-corp"><span class="icons-groups"></span></div>
+                            <div class="text">
+                                <p>Живые деньги</p>
+                                Все деньги в Предложениях,<br/> которые ты видишь <br/> в Килотонс – живые! <br/>
+                                Они будут переведены <br/> на счёт твоей компании,  <br/> если ты согласишься <br/> с условиями поставки.
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image m-bg-corp"><span class="icons-stat"></span></div>
+                            <div class="text">
+                                <p>Развивай бизнес</p>
+                                Расширяй каналы продаж,  <br/> снижай издержки,  <br/> поднимай оборот! <br/>
+                                Если ты – частное лицо, попробуйте возможности Профессионального <br/> Режима работы.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image m-bg-corp"><span class="icons-analytics"></span></div>
+                            <div class="text">
+                                <p>Уникальная статистика</p>
+                                Анализируй покупательский спрос <br> и планируй продажи. Количество аналитических сервисов будет только расти вместе с ростом Килотонс</div>
+                        </div>
+                        <div class="item">
+                            <div class="image m-bg-corp"><span class="icons-mobilephone"></span></div>
+                            <div class="text">
+                                <p>Online 24</p>
+                                Мобильные приложения iOs, Android  <br/> – оставайся в курсе  <br/> движения денег <br/> в режиме 24/7.
+                            </div>
+                        </div>
+                        <!--<div class="clr"></div>-->
+                    </div>
+                </div>
+        </section>
+        <section class="main-wrapper">
+            <div class="b-promo-bg m-bg-corp">
+                <div class="b-promo-bg-content">
+                        <h2>ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ</h2>
+                        <p>
+                            Мы предлагаем воспользоваться системой Килотонс бесплатно в любом из режимов – в Бизнес,
+                            или в Профессиональном, - сроком на один месяц. Оплата за использование соответствующих
+                            сервисов будет немедленно зачислена на твой счёт в Килотонс, и ты сможешь тут же потратить
+                            эти деньги на необходимые твоей компании или тебе покупки. Если в течение 3-х месяцев ты не
+                            сделаешь ни одной покупки, – мы вернём деньги, и при этом сохраним возможность использовать
+                            возможности тарифа до конца срока его действия.
+
+                        </p>
+                        <p class="m-postscript">
+                            * - сроки акции устанавливаются по усмотрению администрации Килотонс</p>
+                        <div class="img-logo"></div>
+                    </div>
+                </div>
+        </section>
+        <section class="b-content">
+            <div class="title-prices">
+                    <h3 class="m-color">Перейти на Бизнес режим</h3>
+                </div>
+                <div class="prices clearfix m-prices-corp">
+                    <div id="prices2" class="prise-item  prices-2">
+                        <p class="period"><span>1</span> месяц</p>
+                        <p class="sum"><span>4 000 руб.</span></p>
+                        <div class="sale m-sale-corp active"><span></span></div>
+                        <a class="btn-prices m-bg-corp" href="/account/corp/register/?tariff=corporate.month.1"><span class="try">Активировать</span></a>
+                    </div>
+                    <div id="prices3" class="prise-item  prices-3">
+                        <p class="period"><span>6</span> месяцев</p>
+                        <p class="sum"><span>20 000 руб.</span></p>
+                        <div class="sale m-sale-corp active"><span></span></div>
+                        <a class="btn-prices m-bg-corp" href="/account/corp/register/?tariff=corporate.month.6"><span class="try">Активировать</span></a>
+                    </div>
+                    <div class="prise-item  prices-4" id="prices4">
+                        <p class="period"><span>1</span> год</p>
+                        <p class="sum"><span>30 000 руб.</span></p>
+                        <div class="sale m-sale-corp active"><span></span></div>
+                        <a class="btn-prices m-bg-corp" href="/account/corp/register/?tariff=corporate.year.1"><span class="try">Активировать</span></a>
+
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="to-compare m-padd clearfix">
+                    <span>Так и не выбрал - посмотри страницу сравнения тарифов</span>
+                    <a href="/page/rates" class="to_link">СРАВНИТЬ ТАРИФЫ</a>
+                </div>
+            </section>
+
+    </div>
+
+    <link rel="stylesheet" href="/static/jspm_widgets/footer/style.css">
+
+<footer class="footer _footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer__rightCol footer-menus">
+                <div class="single-menu">
+                    <h3>Проект</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="/page/howto">Как работает Килотонс</a>
+                        </li>
+                        <li>
+                            <a href="/page/offer">Договор публичной оферты</a>
+                        </li>
+                        <li>
+                            <a href="/page/privacy">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="/page/payment">Оплата и доставка</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="single-menu">
+                    <h3>Партнёрам</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="/page/invoffers">Информация для инвесторов</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="single-menu">
+                    <h3>Компания</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="/page/contact">Реквизиты и контакты</a>
+                        </li>
+                        <li>
+                            <a href="/page/feedback">Оставить отзыв</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__leftCol">
+                <div class="footer-logo">
+                    <img src="/static/jspm_kilotons/images/round-logo.svg" alt="">
+                </div>
+                <div>
+                    <div class="footer__phone">8-812-332-54-21</div>
+                    <div class="footer__email"><a href="mailto:support@kilotons.ru">support@kilotons.ru</a></div>
+                </div>
+
+                <span>
+                    <a id="iosAppButton" target="_blank" href="https://itunes.apple.com/ru/app/килотонс-закупай-выгоднее-продавай-больше/id1236669403?mt=8">
+                        <img src="/static/jspm_kilotons/images/appstore.svg" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__content">
+                <div class="footer-copyright">
+                    &copy; 2017, ООО «»
+                </div>
+                <div class="payPartners">
+                    <img src="/static/jspm_widgets/footer/img/visa.svg" title="Visa" alt="Visa" />
+                    <img src="/static/jspm_widgets/footer/img/visa-el.svg" title="Visa Electron" alt="Visa Electron">
+                    <img src="/static/jspm_widgets/footer/img/visa-verified.svg" title="Verified by Visa" alt="Verified by Visa">
+                    <img src="/static/jspm_widgets/footer/img/mastercard.svg" title="MasterCard" alt="MasterCard" />
+                    <img src="/static/jspm_widgets/footer/img/maestro.svg" title="Maestro" alt="Maestro">
+                    <img src="/static/jspm_widgets/footer/img/mc-securecode.svg" title="MasterCard SecureCode" alt="MasterCard SecureCode">
+                    <img src="/static/jspm_widgets/footer/img/alfa.svg" title="Альфа-Банк" alt="Альфа-Банк" />
+                    <img src="/static/jspm_widgets/footer/img/qiwi.svg" title="Qiwi кошелёк" alt="Qiwi кошелёк" />
+                    <img src="/static/jspm_widgets/footer/img/webmoney.svg" title="Webmoney" alt="Webmoney" />
+                    <img src="/static/jspm_widgets/footer/img/evroset.png" title="Евросеть" alt="Евросеть">
+                    <img src="/static/jspm_widgets/footer/img/svyaznoy.svg" title="Связной" alt="Связной">
+                    <img src="/static/jspm_widgets/footer/img/pay-u.svg" title="PayU" alt="PayU">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    if ('kilotons' == 'torgiclub') {
+        $('#iosAppButton').attr('href', 'https://itunes.apple.com/ru/app/torgiclub-dont-overpay-no-one-never/id1224945318?mt=8')
+    }
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96041517-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--Yandex.Metrika counter-->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43639729 = new Ya.Metrika({
+                    id:43639729,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ut:"noindex",
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!--Yandex.Metrika counter-->
+</div>
+<script src="/static/lib/requirejs/require.js"></script>
+<script>
+
+        var cur = "";
+        
+        if (cur == "") {
+            // $("#status--pers").html('<a style="float: right;" id="pers--click--login" href="#" class="btn-prices">Зарегистрироваться</a>');
+            $('.btn-prices').click(function (e) {
+                e.preventDefault(); 
+                $('._signup_btn').click();
+            });
+        }
+
+</script>
+</body>
+
+</html>
+<!--
+ #HTML5 Document
+ #Килотонс™
+-->
